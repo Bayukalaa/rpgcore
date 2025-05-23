@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "rpgcore:raw_demonoid_block"
+    }
+  ],
+  "result": {
+    "item": "rpgcore:raw_demonoid",
+    "count": 9
+  }
+}

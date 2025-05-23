@@ -1,4 +1,4 @@
-package dev.onlydarknesss.rpgcore.items.Block;
+package dev.onlydarknesss.rpgcore.Block;
 
 import dev.onlydarknesss.rpgcore.RPGCore;
 import dev.onlydarknesss.rpgcore.items.ModItems;

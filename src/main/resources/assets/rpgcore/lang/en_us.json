@@ -3,5 +3,7 @@
   "item.rpgcore.raw_demonoid": "Raw Demonoid",
 
   "block.rpgcore.demonoid_ore": "Demonoid Ore",
-  "block.rpgcore.raw_demonoid_block": "Raw Demonoid Block"
+  "block.rpgcore.raw_demonoid_block": "Raw Demonoid Block",
+
+  "creativetab.rpgcore.rpgcore_items": "RPGCore"
 }
