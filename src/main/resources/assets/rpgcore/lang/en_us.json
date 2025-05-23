@@ -1,3 +1,7 @@
 {
-  "item.rpgcore.demonoid": "Demonoid Shard"
+  "item.rpgcore.demonoid": "Demonoid Shard",
+  "item.rpgcore.raw_demonoid": "Raw Demonoid",
+
+  "block.rpgcore.demonoid_ore": "Demonoid Ore",
+  "block.rpgcore.raw_demonoid_block": "Raw Demonoid Block"
 }

@@ -15,6 +15,9 @@ public class ModItems {
     public static final RegistryObject<Item> Demonoid = ITEMS.register("demonoid", () ->
             new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> Raw_Demonoid = ITEMS.register("raw_demonoid", () ->
+        new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

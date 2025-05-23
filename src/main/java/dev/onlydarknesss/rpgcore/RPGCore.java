@@ -1,6 +1,7 @@
 package dev.onlydarknesss.rpgcore;
 
 import com.mojang.logging.LogUtils;
+import dev.onlydarknesss.rpgcore.items.Block.ModBlocks;
 import dev.onlydarknesss.rpgcore.items.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,7 +33,7 @@ public class RPGCore
         modEventBus.addListener(this::addCreative);
 
         ModItems.register(modEventBus);
-
+        ModBlocks.register(modEventBus);
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
@@ -44,6 +45,12 @@ public class RPGCore
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.Demonoid);
+            event.accept(ModItems.Raw_Demonoid);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.DEMONOID_ORE);
+            event.accept(ModBlocks.RAW_DEMONOID_BLOCK);
         }
     }
 
