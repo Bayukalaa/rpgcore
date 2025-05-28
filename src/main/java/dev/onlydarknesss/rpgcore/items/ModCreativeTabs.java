@@ -20,10 +20,13 @@ public class ModCreativeTabs {
                         output.accept(ModItems.Demonoid.get());
                         output.accept(ModItems.Raw_Demonoid.get());
 
+                        output.accept(ModItems.DetectorItem.get());
 
                         output.accept(ModBlocks.DEMONOID_ORE.get());
                         output.accept(ModBlocks.RAW_DEMONOID_BLOCK.get());
                         output.accept(ModBlocks.DEEPSLATE_DEMONOID_ORE.get());
+                        output.accept(ModBlocks.ENDLESS_DEMONOID_ORE.get());
+                        output.accept(ModBlocks.HELL_DEMONOID_ORE.get());
                     }).build());
 
     public static void register(IEventBus eventBus){

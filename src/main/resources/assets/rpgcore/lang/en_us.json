@@ -1,9 +1,12 @@
 {
   "item.rpgcore.demonoid": "Demonoid Shard",
   "item.rpgcore.raw_demonoid": "Raw Demonoid",
+  "item.rpgcore.metals_detector": "Metal Detector",
 
   "block.rpgcore.demonoid_ore": "Demonoid Ore",
   "block.rpgcore.raw_demonoid_block": "Raw Demonoid Block",
   "block.rpgcore.deepslate_demonoid_ore": "Deepslate Demonoid Ore",
+  "block.rpgcore.endless_demonoid_ore": "Endless Demonoid Ore",
+  "block.rpgcore.hell_demonoid_ore": "Hell Demonoid Ore",
   "creativetab.rpgcore.rpgcore_items": "RPGCore"
 }

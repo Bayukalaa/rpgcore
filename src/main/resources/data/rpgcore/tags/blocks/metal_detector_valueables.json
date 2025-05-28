@@ -1,0 +1,9 @@
+{
+  "values": [
+    "rpgcore:demonoid_ore",
+    "rpgcore:deepslate_demonoid_ore",
+    "rpgcore:endless_demonoid_ore",
+    "rpgcore:hell_demonoid_ore",
+    "#forge:ores"
+  ]
+}

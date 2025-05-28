@@ -1,6 +1,7 @@
 package dev.onlydarknesss.rpgcore.items;
 
 import dev.onlydarknesss.rpgcore.RPGCore;
+import dev.onlydarknesss.rpgcore.items.custom.DetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +18,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> Raw_Demonoid = ITEMS.register("raw_demonoid", () ->
         new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> DetectorItem = ITEMS.register("metals_detector", ()->
+            new DetectorItem(new Item.Properties().durability(100)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

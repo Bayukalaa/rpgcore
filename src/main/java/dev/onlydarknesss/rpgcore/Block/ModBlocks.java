@@ -26,8 +26,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_DEMONOID_ORE = registerBlock("deepslate_demonoid_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)
             .strength(3f).requiresCorrectToolForDrops(), UniformInt.of(2, 4)));
 
-    public static final RegistryObject<Block> RAW_DEMONOID_BLOCK = registerBlock("raw_demonoid_block", () -> new Block(BlockBehaviour.Properties.of()
-            .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES)));
+    public static final RegistryObject<Block> ENDLESS_DEMONOID_ORE = registerBlock("endless_demonoid_ore", ()-> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
+            .strength(4f).requiresCorrectToolForDrops(), UniformInt.of(2,4)));
+
+    public static final RegistryObject<Block> HELL_DEMONOID_ORE = registerBlock("hell_demonoid_ore", ()-> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_QUARTZ_ORE)
+            .strength(4f).requiresCorrectToolForDrops(), UniformInt.of(2, 4)));
+
+    public static final RegistryObject<Block> RAW_DEMONOID_BLOCK = registerBlock("raw_demonoid_block", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+            .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(1, 1)));
 
 
     private static <T extends Block> void  registerBlockItem(String name, RegistryObject<T> block){

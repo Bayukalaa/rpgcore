@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "rpgcore:block/hell_demonoid_ore"
+  }
+}
