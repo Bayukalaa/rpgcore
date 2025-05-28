@@ -2,9 +2,12 @@ package dev.onlydarknesss.rpgcore.Block;
 
 import dev.onlydarknesss.rpgcore.RPGCore;
 import dev.onlydarknesss.rpgcore.items.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,8 +20,11 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, RPGCore.MOD_ID);
 
-    public static final RegistryObject<Block> DEMONOID_ORE = registerBlock("demonoid_ore", () -> new Block(BlockBehaviour.Properties.of()
-            .strength(4f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));
+    public static final RegistryObject<Block> DEMONOID_ORE = registerBlock("demonoid_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+            .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(2, 4)));
+
+    public static final RegistryObject<Block> DEEPSLATE_DEMONOID_ORE = registerBlock("deepslate_demonoid_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)
+            .strength(3f).requiresCorrectToolForDrops(), UniformInt.of(2, 4)));
 
     public static final RegistryObject<Block> RAW_DEMONOID_BLOCK = registerBlock("raw_demonoid_block", () -> new Block(BlockBehaviour.Properties.of()
             .strength(4f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE_TILES)));

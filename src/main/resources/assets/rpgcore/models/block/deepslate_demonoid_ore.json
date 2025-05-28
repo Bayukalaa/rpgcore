@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "rpgcore:block/deepslate_demonoid_ore"
+  }
+}
